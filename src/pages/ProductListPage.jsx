@@ -88,9 +88,9 @@ export default function ProductListPage() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-gray-100 bg-gray-50">
-                  {['Product', 'Category', 'Price', 'Stock', 'Rating', 'Actions'].map((h) => (
-                    <th key={h} className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">
-                      {h}
+                  {['Product', 'Category', 'Price', 'Stock', 'Rating', 'Actions'].map((data) => (
+                    <th key={data} className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                      {data}
                     </th>
                   ))}
                 </tr>
