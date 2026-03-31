@@ -42,7 +42,6 @@ export default function ProductFormPage() {
     },
   })
 
-  // fetch data (edit mode)
   useEffect(() => {
     if (!isEditMode) return
 
