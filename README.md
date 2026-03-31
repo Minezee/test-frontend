@@ -1,19 +1,22 @@
-# React + Vite
+## 🚀 Production
+Buka [https://frontend-test-nauval.vercel.app/](https://frontend-test-nauval.vercel.app/) untuk melihat hasil aplikasi.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## ⚠️ Disclaimer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Akun yang Tersedia
+Karena API hanya mendukung fitur *login* tanpa opsi untuk menambahkan pengguna baru, silakan gunakan salah satu akun berikut:
 
-## React Compiler
+- **Username**: `emilys`  
+  **Password**: `emilyspass`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Username**: `michaelw`  
+  **Password**: `michaelwpass`
 
-## Expanding the ESLint configuration
+### Akun Lainnya
+Untuk melihat daftar akun lainnya, Anda dapat mengaksesnya di API berikut:  
+[https://dummyjson.com/users](https://dummyjson.com/users]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# frontenddev-test
-# test-frontend
-# test-frontend
+### Registrasi
+Karena API tidak mendukung perubahan data di database, fitur CRUD hanya akan memberikan respons sukses jika berhasil, tanpa melakukan perubahan apapun ke list asli.
