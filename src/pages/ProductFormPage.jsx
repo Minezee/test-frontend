@@ -130,6 +130,7 @@ export default function ProductFormPage() {
           <Input
             label="Price *"
             type="number"
+            step="0.01"
             min={0}
             {...register('price', {
               required: 'Price is required',
@@ -142,6 +143,7 @@ export default function ProductFormPage() {
           <Input
             label="Stock *"
             type="number"
+            step="0.01"
             min={0}
             {...register('stock', {
               required: 'Stock is required',
@@ -154,6 +156,7 @@ export default function ProductFormPage() {
           <Input
             label="Discount %"
             type="number"
+            step="0.01"
             min={0}
             max={100}
             {...register('discountPercentage')}
@@ -162,6 +165,7 @@ export default function ProductFormPage() {
           <Input
             label="Rating"
             type="number"
+            step="0.01"
             min={0}
             max={5}
             {...register('rating')}
@@ -174,15 +178,15 @@ export default function ProductFormPage() {
           />
 
           {thumbnailPreview && (
-          <div className="flex items-center gap-3 p-3 bg-gray-50 w-fit rounded-lg">
-            <img
-              src={thumbnailPreview}
-              alt="preview"
-              className="w-12 h-12 object-cover rounded-lg"
-              onError={(event) => (event.target.style.display = 'none')}
-            />
-          </div>
-        )}
+            <div className="flex items-center gap-3 p-3 bg-gray-50 w-fit rounded-lg">
+              <img
+                src={thumbnailPreview}
+                alt="preview"
+                className="w-12 h-12 object-cover rounded-lg"
+                onError={(event) => (event.target.style.display = 'none')}
+              />
+            </div>
+          )}
 
           <div className="sm:col-span-2 flex flex-col gap-1">
             <label className="text-sm font-medium">Category *</label>
@@ -190,11 +194,11 @@ export default function ProductFormPage() {
               {...register('category', { required: 'Category is required' })}
               className={`input-field ${errors.category ? 'border-red-400' : ''}`}
             >
-              <option value="">Select category</option>
+              {watch('category') && !CATEGORY_OPTIONS.includes(watch('category')) && (
+                <option value={watch('category')}>{watch('category')}</option>
+              )}
               {CATEGORY_OPTIONS.map((categoryName) => (
-                <option key={categoryName} value={categoryName}>
-                  {categoryName}
-                </option>
+                <option key={categoryName} value={categoryName}>{categoryName}</option>
               ))}
             </select>
             {errors.category && (
