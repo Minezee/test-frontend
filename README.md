@@ -16,7 +16,7 @@ Karena API hanya mendukung fitur *login* tanpa opsi untuk menambahkan pengguna b
 
 ### Akun Lainnya
 Untuk melihat daftar akun lainnya, Anda dapat mengaksesnya di API berikut:  
-[https://dummyjson.com/users](https://dummyjson.com/users]
+[https://dummyjson.com/users](https://dummyjson.com/users)
 
 ### Registrasi
 Karena API tidak mendukung perubahan data di database, fitur CRUD hanya akan memberikan respons sukses jika berhasil, tanpa melakukan perubahan apapun ke list asli.
